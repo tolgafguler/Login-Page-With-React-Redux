@@ -1,0 +1,71 @@
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+    grid-template-rows: 5rem 2fr 5rem;
+    grid-template-columns: 1fr;
+    height: 100vh;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    color:rgb(196, 21, 21);
+  }
+  header {
+    font-size: 250%;
+    grid-area: header;
+    background-color:rgb(196, 21, 21);
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+  }
+  header a {
+    
+    color: #ffffff;
+    text-decoration: none;
+    
+  }
+
+  main {
+    
+    font-size: 180%;
+    color: rgb(196, 21, 21);
+    background-repeat: no-repeat;
+    background-position: left center, right top, 60px bottom;
+    background-size:230px;
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login-button{
+    background-color: rgb(196, 21, 21);
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+  }
+  .register-button{
+    color: white;
+    background-color:rgb(196, 21, 21);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+  footer {
+    grid-area: footer;
+    background-color:rgb(196, 21, 21);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+  }
